@@ -1,0 +1,111 @@
+
+/* Responsive at Small at ≥768px */
+
+@media all and (max-width: 768px) {
+
+	/* Home and Navigation */
+
+	.nav--container--right {
+		width: 100%;
+	}
+
+	.call-to-action {
+		width: 100%;
+	}
+
+	header {
+		margin-top: 0px;
+	}
+
+	section.home--intro .small_wrapper {
+		max-width: 100%;
+	}
+
+	.fast-forward, .mini-forward, .marker {
+		display: none;
+	}
+
+	.home--location .home--circle {
+		right: 32%;
+		top: -75px;
+	}
+
+	.home--entertainment .entertainment--special--container {
+		display: none;
+	}
+
+	.home--location .location--container {
+		padding-top: 100px;
+	}
+
+	.home--location .location--container--left {
+		width: 100%;
+		text-align: center;
+	}
+
+	.home--entertainment {
+		display: none;
+	}
+
+	.home--faq-toy .faq-left, .home--faq-toy .toy-right {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	.home--faq-toy .kpmg-disclaimer {
+		margin-top: 15px;
+	}
+
+	.home--faq-toy .toy-right a, .home--faq-toy .faq-left a {
+		font-size: 50px;
+	}
+
+	.home--location .location--container--left {
+		margin-bottom: 50px;
+	}
+
+	section.home--faq-toy .wrapper {
+		max-width: 100%;
+	}
+
+	
+	/* Login and Step Pages */ 
+
+	#login {
+		width: 250px;
+	}
+
+	form#kpmg-registration-form {
+		width: 250px;
+		select {
+			width: 100%;
+		}
+	}
+
+	main.steps-2 #kpmg-registration-form {
+		width: 80%;
+		input[type=submit] {
+			width: 100%;
+			margin: 45px 0px 0px 0px;
+		}
+	}
+	main.steps #kpmg-registration-form .guest-info input {
+		width: 80%;
+	}
+
+	main.steps-register #kpmg-registration-form {
+		width: 80%;
+		input[type=text] {
+			width: 78%;
+		}
+	}
+
+	/* FAQ PAGE */
+
+	.question--container {
+		width: 70%;
+	}
+
+
+	
+}

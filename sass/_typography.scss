@@ -1,0 +1,182 @@
+
+
+
+/* Import Fonts */
+
+@font-face {
+	font-family: 'HelveticaNeueLTStd-Bd';
+	src: url('fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.eot');
+	src: url('fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.ttf') format('truetype'),
+		 url('fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.woff') format('woff');
+	font-weight: bold;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: 'HelveticaNeueLTStd-Lt';
+	src: url('fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Lt.eot');
+	src: url('fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Lt.ttf') format('truetype'),
+		 url('fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Lt.woff') format('woff');
+	font-weight: lighter;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: 'HelveticaNeueLTStd-Hv';
+	src: url('fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Hv.eot');
+	src: url('fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Hv.ttf') format('truetype'),
+		 url('fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Hv.woff') format('woff');
+	font-weight: bold;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: 'Lot';
+	src: url('fonts/Lot/LOT.eot');
+	src: url('fonts/Lot/LOT.woff') format('woff'),
+		 url('fonts/Lot/LOT.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Octagonal-Bold';
+	src: url('fonts/Octagonal/Octagonal-Bold.eot');
+	src: url('fonts/Octagonal/Octagonal-Bold.woff') format('woff'),
+		 url('fonts/Octagonal/Octagonal-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Octagonal';
+	src: url('fonts/Octagonal/Octagonal.eot');
+	src: url('fonts/Octagonal/Octagonal.woff') format('woff'),
+		 url('fonts/Octagonal/Octagonal.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OctagonalLight';
+	src: url('fonts/OctagonalLight/OctagonalLight.eot');
+	src: url('fonts/OctagonalLight/OctagonalLight.woff') format('woff'),
+		 url('fonts/OctagonalLight/OctagonalLight.svg') format('svg');
+	font-weight: lighter;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OctagonalUltraLight';
+	src: url('fonts/OctagonalUltraLight/OctagonalUltraLight.eot');
+	src: url('fonts/OctagonalUltraLight/OctagonalUltraLight.woff') format('woff'),
+		 url('fonts/OctagonalUltraLight/OctagonalUltraLight.svg') format('svg');
+	font-weight: light;
+	font-style: normal;
+}
+
+
+
+
+
+
+
+
+a {
+	color: #BA209B;
+	text-decoration: none;
+	&:hover {
+		color: #D424B1;
+		text-decoration: none !important;
+	}
+}
+
+/* paragraphs */
+
+p {
+	line-height: 1.5;
+}
+
+/*blockquotes*/
+
+blockquote {
+	background: #F7F7F7;
+	margin: 0;
+	padding: 20px;
+	p {
+		margin-top: 0;
+	}
+}
+
+/*tables*/
+
+table {
+	td {
+		padding: 10px;
+	}
+	tr td:first {
+		padding-right: 0;
+	}
+}
+
+/*def lists*/
+
+dt {
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+dd {
+	padding: 10px;
+	margin-left: 10px;
+}
+
+/*lists*/
+
+ul li, ol li {
+	padding: 3px;
+}
+
+/*PRE*/
+
+pre {
+	background: #F7F7F7;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+
+/*
+====================================
+Global Classes / Wordpress Specific
+====================================
+*/
+
+.aligncenter {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+img {
+	&.alignleft {
+		padding-right: 5px;
+	}
+	&.alignright {
+		padding-left: 5px;
+	}
+}
+
+.clear {
+	width: 100%;
+	float: left;
+	clear: both;
+}

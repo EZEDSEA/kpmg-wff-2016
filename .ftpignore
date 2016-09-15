@@ -1,0 +1,7 @@
+node_modules
+.gitignore
+.ftpconfig
+.ftpignore
+package.json
+gulpfile.js
+.DS_Store

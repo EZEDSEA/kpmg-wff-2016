@@ -1,0 +1,149 @@
+/*
+* Theme Name:
+* Description: Theme for KPMG Winterfest 2016
+* Version: 1.1
+* Author: Tom Haxell & Lindsay Pichie
+* Author URI: http://tomhaxell.com
+*/
+
+/*
+Universal Classes
+---------------------
+*/
+
+body {
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.full {
+	width: 100%;
+}
+
+.wrapper {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.small_wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.relative {
+	position: relative;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.center {
+	text-align: center;
+}
+
+.vertically-center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.line--A {
+	border-bottom: 2px solid black;
+	height: 2px;
+	width: 200%;
+}
+
+.line--B {
+	width: 100%;
+	height: 2px;
+	border-bottom: 2px dotted grey;
+}
+
+/*
+------------------------
+End of Universal Classes
+*/
+
+
+@import 'colors';
+@import 'buttons';
+@import 'grid';
+@import 'normalize';
+@import 'typography';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'faq';
+@import 'home';
+@import 'login';
+@import 'footer';
+@import 'lg';
+@import 'md';
+@import 'sm';
+@import 'xs';
+
+/*
+====================================
+Default Styling
+====================================
+*/
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, ul, p {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font-size: 5rem;
+	font-family: 'HelveticaNeueLTStd-Hv', sans-serif;
+}
+
+h2 {
+	font-size: 4rem;
+	font-family: 'HelveticaNeueLTStd-Hv', sans-serif;
+}
+
+h3 {
+	font-size: 3rem;
+	font-family: 'Octagonal-Bold';
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.5rem;
+	font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+
+/* DESIGN CODING STARTS */

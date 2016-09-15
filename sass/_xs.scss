@@ -1,0 +1,23 @@
+
+
+/* Responsive at Extra-Small at ≥500px */
+
+@media all and (max-width: 500px) {
+
+	.home--schedule .schedule--container--left {
+		width: 10%;
+		margin-right: 10%;
+	}
+
+	.home--location .home--circle {
+		right: 22%;
+	}
+
+	.kpmg--logo {
+		max-width: 40%;
+	}
+
+
+
+	
+}

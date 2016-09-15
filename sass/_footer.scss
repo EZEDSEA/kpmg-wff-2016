@@ -1,0 +1,25 @@
+footer.footer--home {
+	clear: both;
+	padding: 60px 0px 100px 0px;
+}
+
+footer.footer--steps {
+	clear: both;
+}
+
+.kpmg-disclaimer {
+	background: $Purple;
+	color: white;
+	padding: 45px 0px;
+
+}
+
+.secondary-disclaimer {
+	background: white;
+	padding: 45px 0px;
+	p {
+		color: grey;
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+	}
+}

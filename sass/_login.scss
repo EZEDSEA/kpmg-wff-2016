@@ -1,0 +1,208 @@
+
+
+
+section.login-steps {
+	main {
+		padding: 45px 0px;
+	}
+	.entry-content p {
+		text-align: center;
+	}
+}
+
+.step-title {
+	text-align: center;
+	padding: 45px 0px 15px 0px;
+	h1 {
+		font-family: 'Octagonal-Bold';
+	}
+	h2 {
+		color: $Pink;
+		font-size: 2rem;
+	}
+}
+
+#login {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 400px;
+	input {
+		background-color: #ebf0f3;
+		margin-bottom: 15px;
+		padding: 10px;
+	}
+	input[name=kpmg_login_submit] {
+		border: none;
+		background: $Pink;
+		font-family: 'Octagonal-Bold';
+		color: white;
+		text-transform: uppercase;
+		font-size: 4rem;
+		border: 4px solid transparent;
+		padding: 8px 50px;
+		transition: all .2s ease-in-out;
+		margin: 0 auto;
+		width: auto;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		@extend .button--A;
+		&:hover {
+			background: white;
+			border: 4px solid $Pink;
+			color: $Pink;
+		}
+	}
+}
+
+.account-sign-up {
+	margin-top: 15px;
+	font-size: 2rem;
+	color: black;
+	font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+}
+
+main.steps #kpmg-registration-form {
+	margin: 0 auto;
+	width: 400px;
+	display: block;
+	text-align: center;
+	@extend .clearfix;
+	h3 {
+		font-size: 5rem;
+	}
+	input {
+		background-color: #ebf0f3;
+		margin-bottom: 15px;
+		padding: 10px;
+		margin: 0px 10px;
+	}
+	.bring-guest, .guest-info {
+		margin: 15px 0px;
+	}
+	.guest-info {
+		input {
+			width: 40%;
+			margin: 20px 0px 0px 0px;
+		}
+	}
+	span.yellow {
+		color: $Blue;
+	}
+	textarea {
+		width: 60%;
+	}
+	input[type=submit] {
+		border: none;
+		margin: 0px 10px;
+		background: $Pink;
+		font-family: 'Octagonal-Bold';
+		color: white;
+		text-transform: uppercase;
+		font-size: 4rem;
+		border: 4px solid transparent;
+		padding: 8px 50px;
+		transition: all .2s ease-in-out;
+		width: auto;
+		@extend .button--A;
+		&:hover {
+			background: white;
+			border: 4px solid $Pink;
+			color: $Pink;
+		}
+	}
+	input[value="BACK"], input[value="NEXT"] {
+		margin: 45px 50px 0px 50px;
+	}
+	select:not([multiple]) {
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    background-position: right 50%;
+	    background-repeat: no-repeat;
+	    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+	    padding: 10px;
+	    font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+	}
+	select {
+		border: 1px solid black;
+		padding: 10px;
+		margin: 15px 0px;
+		border-radius: 0px;
+		height: 40px;
+		width: 80%;
+		font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+	}
+}
+
+main.steps-2 #kpmg-registration-form {
+	width: 600px;
+	.guest-info {
+		h3:last-of-type {
+		font-family: 'HelveticaNeueLTStd-Bd', sans-serif;	
+		font-size: 2rem;
+		}
+	}
+}
+
+.attend-info {
+	p:first-of-type {
+		display: none;
+	}
+	select:not([multiple]) {
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    background-position: right 50%;
+	    background-repeat: no-repeat;
+	    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+	    padding: 10px;
+	    font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+	}
+	select {
+		border: 1px solid black;
+		padding: 10px;
+		margin: 15px 0px;
+		border-radius: 0px;
+		height: 40px;
+		width: 80%;
+		font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+	}
+}
+
+
+main.steps-register {
+	#kpmg-registration-form {
+		width: 600px;
+	}
+	input[type=text] {
+		width: 37%;
+	}
+	.email_address {
+		width: 80%;
+	}
+	#kpmg-registration-form input {
+		margin: 10px 0px;
+	}
+	input[type=password] {
+		width: 80%;
+	}
+	p:last-of-type {
+		font-size: 1.5rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
