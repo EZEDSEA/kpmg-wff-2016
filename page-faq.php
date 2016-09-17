@@ -5,16 +5,14 @@
 
  <?php get_header(); ?>
 
-	  		<div class="faq-title">
-  				<h2 class="uppercase">Winterfest 2016</h2>
-			</div>
+		 <div class="step-title">
+			 <h2 class="uppercase">Winterfest 2016</h2>
+			 <h1><?php the_title(); ?></h2>
+		 </div>
 			<div class="line--B"></div>
 
 			<section class="faq">
 				<div class="wrapper">
-
-					<h3><?php the_title(); ?></h3>
-
 					<?php if( have_rows('questions') ): ?>
 
 						<?php while( have_rows('questions') ): the_row(); ?>

@@ -14,7 +14,8 @@ section.faq {
 	text-align: center;
 	padding: 45px 0px 15px 0px;
 	h1 {
-		font-family: 'Octagonal-Bold';
+		font-family: 'Octagonal';
+		font-weight: bold;
 	}
 	h2 {
 		color: $Pink;
@@ -56,7 +57,3 @@ span.triangle {
 .point-down {
 	transform: rotate(90deg);
 }
-
-
-
-

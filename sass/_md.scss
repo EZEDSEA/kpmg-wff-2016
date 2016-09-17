@@ -50,7 +50,7 @@
 	.home--entertainment .entertainment-wrapper {
 		width: 75%;
 	}
-	
+
 
 	.internal-menu--container {
 		height: 30px;
@@ -68,7 +68,7 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	list-style: none;
-	width: 100%; 
+	width: 100%;
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: column;
@@ -77,7 +77,8 @@
 		a {
 			color: $Blue;
 			text-transform: uppercase;
-			font-family: 'HelveticaNeueLTStd-Lt';
+			font-family: 'HelveticaNeueLTStd';
+			font-weight: lighter;
 			font-size: 25px;
 			transition: all .2s ease-in-out;
 			&:hover {
@@ -91,7 +92,5 @@
 
 
 
-	
+
 }
-
-

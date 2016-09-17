@@ -22,7 +22,8 @@ header.home--header ul {
 		a {
 			color: $Blue;
 			text-transform: uppercase;
-			font-family: 'HelveticaNeueLTStd-Lt';
+			font-family: 'HelveticaNeueLTStd';
+			font-weight: lighter;
 			font-size: 25px;
 			transition: all .2s ease-in-out;
 			&:hover {
@@ -40,7 +41,7 @@ header.home--header ul {
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-	overflow-x: scroll; 
+	overflow-x: scroll;
 	padding: 50px 0px;
 	z-index: 5;
 	background: white;
@@ -57,7 +58,8 @@ header.home--header ul {
 	align-items: center;
 	margin-bottom: 40px;
 	h2 {
-		font-family: 'HelveticaNeueLTStd-Hv', sans-serif;
+		font-family: 'HelveticaNeueLTStd', sans-serif;
+		font-weight: bold;
 		font-size: 30px;
 	}
 }
@@ -91,7 +93,7 @@ header.home--header ul {
 	background: $Pink;
 	position: relative;
 	top: 0px;
-	right: 47%; 
+	right: 47%;
 	display: inline-block;
 	padding: 5px 20px;
 	height: 55px;
@@ -143,7 +145,7 @@ ul#menu-internal-menu {
 	list-style: none;
 	width: 100%;
 	li {
-		padding-top: 10px;
+		padding: 0;
 		width: 20%;
 		text-align: center;
 		transition: all .2s ease-in-out;
@@ -156,8 +158,10 @@ ul#menu-internal-menu {
 		a {
 			color: white;
 			text-transform: uppercase;
-			font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+			font-family: 'HelveticaNeueLTStd', sans-serif;
 			font-size: 2rem;
+			display: block;
+    	padding: 10px 3px 3px;
 		}
 	}
 }
@@ -176,10 +180,3 @@ ul#menu-internal-menu {
 	display: none;
 	box-shadow: 1px 1px 5px grey;
 }
-
-
-
-
-
-
-

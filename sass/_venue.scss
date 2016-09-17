@@ -1,0 +1,96 @@
+/*
+====================================
+Styling for Venue Page
+By: Lindsay Pichie
+====================================
+*/
+
+/* Top Container */
+.venue {
+  .venueBox {
+    margin: 6em 0 4em;
+    border: 1px solid;
+    padding: 40px;
+
+    .map {
+      height: 300px;
+
+      .gmap {
+        border: 1px solid;
+      }
+    }
+
+    .mapInfo {
+        padding: 3em 0;
+    }
+
+    .address {
+      margin: 1em 0;
+    }
+  }
+
+  .title {
+    margin-bottom: 2em;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: 21px;
+    font-weight: lighter;
+  }
+
+  .info {
+    margin: 4em -15px;
+
+    h5 {
+      font-weight: 400;
+    }
+
+    p {
+      margin: 1em 0;
+    }
+  }
+}
+
+@media all and (max-width: 992px) {
+  .venue {
+    h4 {
+      font-size: 21px;
+    }
+
+    h5 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .venue {
+    .venueBox {
+      margin: 4em 0 4em;
+      padding: 0;
+
+      .map {
+        padding: 0;
+
+        .gmap {
+          border: none;
+          border-bottom: 1px solid;
+        }
+      }
+    }
+
+    .accommodations {
+      border-bottom: 2px dotted #d3d3d3;
+    }
+
+    .parking {
+      margin-top: 3em;
+    }
+  }
+
+}

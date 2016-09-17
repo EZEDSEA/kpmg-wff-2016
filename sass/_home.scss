@@ -1,6 +1,6 @@
 
 
-/* Home */ 
+/* Home */
 
 .home--main {
 	background: url(assets/images/Home/Main-Header-Background.jpg) 50% no-repeat;
@@ -10,7 +10,8 @@
 	padding-bottom: 75px;
 	min-height: 100vh;
 	h3 {
-		font-family: 'Octagonal-Bold';
+		font-family: 'Octagonal';
+		font-weight: bold;
 		font-size: 33px;
 		color: white;
 		text-transform: uppercase;
@@ -28,7 +29,7 @@
 
 .home--intro {
 	background: $Purple;
-	position: relative; 
+	position: relative;
 }
 
 .winter-logo--container {
@@ -81,7 +82,8 @@
 	position: relative;
 	margin-top: 50px;
 	p {
-		font-family: 'HelveticaNeueLTStd-Lt';
+		font-family: 'HelveticaNeueLTStd';
+		font-weight: 100;
 		font-size: 30px;
 	}
 }
@@ -102,12 +104,14 @@ span.bold--info {
 	color: $Purple;
 	font-size: 50px;
 	margin-right: 25px;
-	font-family: 'HelveticaNeueLTStd-Hv', sans-serif;
+	font-family: 'HelveticaNeueLTStd', sans-serif;
+	font-weight: 800;
 }
 
 p.disclaimer {
 	margin-top: 50px;
-	font-family: 'HelveticaNeueLTStd-Lt';
+	font-family: 'HelveticaNeueLTStd', sans-serif;
+	font-weight: 100;
 	font-size: 20px;
 }
 
@@ -128,17 +132,20 @@ p.disclaimer {
 		width: 40%;
 	}
 	h2 {
-		font-family: 'Octagonal-Bold';
+		font-family: 'Octagonal';
+		font-weight: 800;
 		text-transform: uppercase;
 		color: $Pink;
 	}
 	p {
 		margin: 25px 0px 25px 0px;
-		font-family: 'HelveticaNeueLTStd-Lt';
+		font-family: 'HelveticaNeueLTStd', sans-serif;
+		font-weight: lighter;
 		font-size: 22px;
 	}
 	a.link {
-		font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+		font-family: 'HelveticaNeueLTStd', sans-serif;
+		font-weight: 400;
 		text-transform: uppercase;
 		color: black;
 		text-decoration: underline;
@@ -172,7 +179,8 @@ p.disclaimer {
 	height: 215px;
 	position: relative;
 	h2 {
-		font-family: 'Octagonal-Bold';
+		font-family: 'Octagonal';
+		font-weight: 800;
 		text-transform: uppercase;
 		color: white;
 	}
@@ -237,7 +245,8 @@ p.disclaimer {
 	.one--night {
 		color: white;
 		text-transform: uppercase;
-		font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+		font-family: 'HelveticaNeueLTStd', sans-serif;
+		font-weight: 400;
 		font-size: 20px;
 	}
 
@@ -265,7 +274,8 @@ p.disclaimer {
 		width: 50%;
 		a {
 			color: white;
-			font-family: 'Octagonal-Bold';
+			font-family: 'Octagonal';
+			font-weight: 800;
 			font-size: 100px;
 		}
 	}
@@ -275,7 +285,8 @@ p.disclaimer {
 		width: 50%;
 		a {
 			color: white;
-			font-family: 'Octagonal-Bold';
+			font-family: 'Octagonal';
+			font-weight: 800;
 			font-size: 100px;
 		}
 	}
@@ -288,5 +299,3 @@ p.disclaimer {
 		display: inline-block;
 	}
 }
-
-

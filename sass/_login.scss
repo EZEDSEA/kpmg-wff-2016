@@ -14,7 +14,9 @@ section.login-steps {
 	text-align: center;
 	padding: 45px 0px 15px 0px;
 	h1 {
-		font-family: 'Octagonal-Bold';
+		font-family: 'Octagonal';
+		font-weight: bold;
+    padding: 10px 0;
 		font-size: 6em;
 		text-transform: uppercase;
 	}
@@ -38,7 +40,8 @@ section.login-steps {
 	input[name=kpmg_login_submit] {
 		border: none;
 		background: $Pink;
-		font-family: 'Octagonal-Bold';
+		font-family: 'Octagonal';
+		font-weight: bold;
 		color: white;
 		text-transform: uppercase;
 		font-size: 4rem;
@@ -124,7 +127,8 @@ main.steps #kpmg-registration-form {
 		border: none;
 		margin: 0px 10px;
 		background: $Pink;
-		font-family: 'Octagonal-Bold';
+		font-family: 'Octagonal';
+		font-weight: bold;
 		color: white;
 		text-transform: uppercase;
 		font-size: 4rem;
