@@ -1,6 +1,6 @@
 
 
-	
+</div>
 	<?php if ( is_front_page() ) { ?>
 
 		<footer class="footer--home">
@@ -22,11 +22,10 @@
 		</footer>
 
 
-	<?php } ?>  	
-
-</footer>
+	<?php } ?>
 
 
 <?php wp_footer(); ?>
+</div>
 </body>
 </html>

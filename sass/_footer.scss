@@ -10,8 +10,12 @@ footer.footer--steps {
 .kpmg-disclaimer {
 	background: $Purple;
 	color: white;
-	padding: 45px 0px;
-
+	padding: 3em 2em;
+	height: 100%;
+	p {
+			font-family: HelveticaNeueLTStd-Lt;
+			font-size: 1.6rem;
+	}
 }
 
 .secondary-disclaimer {

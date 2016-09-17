@@ -15,6 +15,8 @@ section.login-steps {
 	padding: 45px 0px 15px 0px;
 	h1 {
 		font-family: 'Octagonal-Bold';
+		font-size: 6em;
+		text-transform: uppercase;
 	}
 	h2 {
 		color: $Pink;
@@ -69,6 +71,24 @@ main.steps #kpmg-registration-form {
 	display: block;
 	text-align: center;
 	@extend .clearfix;
+	p {
+		font-family: 'HelveticaNeueLTStd-Lt', sans-serif;
+
+		&.requireLabel {
+			text-transform: uppercase;
+			margin-bottom: 2em;
+		}
+	}
+
+	.passwordLabel {
+		margin: 2em 1em;
+		font-size: 10px;
+
+		p.passwordMinLabel {
+			font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+		}
+	}
+
 	h3 {
 		font-size: 5rem;
 	}
@@ -89,6 +109,13 @@ main.steps #kpmg-registration-form {
 	}
 	span.yellow {
 		color: $Blue;
+	}
+	span.star {
+		color: #0091DA;
+		vertical-align: top;
+		font-weight: bold;
+		margin-left: 2px;
+		font-size: 1.8em;
 	}
 	textarea {
 		width: 60%;
@@ -139,7 +166,7 @@ main.steps-2 #kpmg-registration-form {
 	width: 600px;
 	.guest-info {
 		h3:last-of-type {
-		font-family: 'HelveticaNeueLTStd-Bd', sans-serif;	
+		font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
 		font-size: 2rem;
 		}
 	}
@@ -175,7 +202,7 @@ main.steps-register {
 		width: 600px;
 	}
 	input[type=text] {
-		width: 37%;
+		width: 38.5%;
 	}
 	.email_address {
 		width: 80%;
@@ -190,19 +217,3 @@ main.steps-register {
 		font-size: 1.5rem;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -13,12 +13,12 @@
 			<section class="faq">
 				<div class="wrapper">
 
-					<h3>FAQ</h3>
+					<h3><?php the_title(); ?></h3>
 
-					<?php if( have_rows('questions') ): ?> 
+					<?php if( have_rows('questions') ): ?>
 
 						<?php while( have_rows('questions') ): the_row(); ?>
-							
+
 							<div class="question--container">
 								<div class="question">
 									<span class="triangle"></span>
@@ -30,7 +30,7 @@
 						<?php endwhile; ?>
 
 					<?php endif; ?>
-					
+
 				</div>
 			</section>
 
