@@ -1,0 +1,66 @@
+.my-info {
+  .info-box {
+    margin: 6em 0 4em;
+    border: 3px solid;
+    padding: 40px;
+    position: relative;
+
+    .topleftconcave, .botleftconcave, .toprightconcave, .botrightconcave {
+      position: absolute;
+      background: #FFF;
+      width: 25px;
+      height: 35px;
+    }
+
+    .topleftconcave {
+      top: -3px;
+      left: -3px;
+      border-bottom-right-radius:500px;
+      border-bottom: solid 3px;
+      border-right: solid 3px;
+      border-top: solid 3px white;
+    }
+    .botleftconcave {
+      bottom: -3px;
+      left: -3px;
+      border-top-right-radius: 500px;
+      border-top: 3px solid;
+      border-right: 3px solid;
+      border-bottom: solid 3px white;
+    }
+    .toprightconcave {
+      top: -3px;
+      right: -3px;
+      border-bottom-left-radius:500px;
+      border-bottom: solid 3px;
+      border-left: solid 3px;
+      border-top: solid 3px white;
+    }
+    .botrightconcave {
+      bottom: -3px;
+      right: -3px;
+      border-top-left-radius: 500px;
+      border-top: 3px solid;
+      border-left: 3px solid;
+      border-bottom: solid 3px white;
+    }
+
+    .mapInfo {
+        padding: 0;
+    }
+
+    .address, .schedule {
+      margin: 1em 0;
+    }
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: 21px;
+    font-weight: lighter;
+  }
+}

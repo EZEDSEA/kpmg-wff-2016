@@ -49,10 +49,11 @@
             'container' => false,
             'theme_location' => 'primary'
            )); ?>
-
-           <div class="button--circle">
-               <h3><a href="<?php echo get_home_url(); ?>/register">Register Today</a></h3>
-           </div>
+           <a href="<?php echo get_home_url(); ?>/register">
+             <div class="button--circle">
+                 <h3>Register Today</h3>
+             </div>
+           </a>
            <p><?php echo do_shortcode('[kpmgwinterfest_employee_cancel_registration]'); ?></p>
           </div>
         </div>
@@ -91,10 +92,11 @@
               'container' => false,
               'theme_location' => 'internal'
              )); ?>
-
-             <div class="button--circle">
-                 <h3><a href="#">Register Today</a></h3>
-             </div>
+             <a href="<?php echo get_home_url(); ?>/register">
+               <div class="button--circle">
+                   <h3>Register Today</h3>
+               </div>
+             </a>
              <p><?php echo do_shortcode('[kpmgwinterfest_employee_cancel_registration]'); ?></p>
             </div>
         </div>

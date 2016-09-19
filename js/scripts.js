@@ -1,8 +1,5 @@
 $(function(){
 
-	console.log("Working");
-
-
 	// Pop up home navigation
 
 	$('.hamburger--container').on('click', function() {
@@ -60,7 +57,6 @@ $(function(){
 	// FAQ Slider
 
 	$('.question').click(function() {
-		console.log('hey');
 		var answer = $(this).find('p');
 		var arrow = $(this).find('span.triangle');
 		$(this).find('span.triangle').toggleClass('point-down');

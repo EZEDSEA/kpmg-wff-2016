@@ -14,12 +14,9 @@
  			<div class="winter-logo--container">
  				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Home/winter-fast-logo.png" alt="Winter Fast Logo">
  			</div>
- 			<div class="button--A">
- 				<h3><a href="#">Register Today</a></h3>
- 			</div>
+ 			<a href="<?php echo get_home_url(); ?>/register" class="button">Register Today</a>
  			<p><?php echo do_shortcode('[kpmgwinterfest_employee_cancel_registration]'); ?></p>
-
- 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Home/Scroll_More.png" alt="Scroll for more information">
+ 			<img class="scrollimg" src="<?php echo get_template_directory_uri(); ?>/assets/images/Home/Scroll_More.png" alt="Scroll for more information" />
  		</div>
  	</section>
 
@@ -30,12 +27,12 @@
  					<p><?php the_field('intro_text'); ?></p>
  				</div>
  				<div class="intro--container--right relative">
- 					<div class="embed-container">				
+ 					<div class="embed-container">
 						<?php the_field('intro_video'); ?>
  					</div>
  				</div>
  			</div>
- 			<img class="fast-forward" src="<?php echo get_template_directory_uri(); ?>/assets/images/Home/fast-forward.png" alt="Fast Forward Symbol">
+ 			<img class="fast-forward" src="<?php echo get_template_directory_uri(); ?>/assets/images/Home/fast-forward.png" alt="Fast Forward Symbol" />
  		</div>
  	</section>
 
@@ -71,16 +68,18 @@
  		</div>
  		<div class="wrapper">
  			<div class="location--container flex relative">
- 				<div class="button--circle home--circle">
-           			<h3><a href="<?php echo get_home_url(); ?>/register">Register Today</a></h3>
+        <a href="<?php echo get_home_url(); ?>/register">
+ 				     <div class="button--circle home--circle">
+           			<h3>Register Today</h3>
        			</div>
+        </a>
  				<div class="location--container--left">
  					<h2><?php the_field('location_name'); ?></h2>
  					<p><?php the_field('location_address'); ?></p>
  					<a class="link" href="<?php echo get_home_url(); ?>/venue">Directions & Hotel</a>
  				</div>
  				<div class="location--container--right">
- 					
+
  				</div>
  			</div>
  		</div>
@@ -113,14 +112,18 @@
 
  	<section class="home--faq-toy">
  		<div class="wrapper clearfix">
-			<div class="faq-left">
-				<h1 class="uppercase"><a href="#">FAQ</a></h1>
-			</div>
-			<div class="toy-right">
-				<h1 class="uppercase"><a href="#">TOY DRIVE</a></h1>
-			</div>
+      <a href="<?php echo get_home_url(); ?>/faq">
+  			<div class="faq-left">
+  				<h1 class="uppercase">FAQ</h1>
+  			</div>
+      </a>
+      <a href="<?php echo get_home_url(); ?>/toy-drive">
+  			<div class="toy-right">
+  				<h1 class="uppercase">TOY DRIVE</h1>
+  			</div>
+      </a>
 			<div class="kpmg-disclaimer">
-				<p><?php the_field('kpmg_disclaimer'); ?></p>
+				<?php the_field('kpmg_disclaimer'); ?>
 			</div>
  		</div>
  	</section>

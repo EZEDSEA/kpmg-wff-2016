@@ -68,8 +68,15 @@
 		max-width: 100%;
 	}
 
-	
-	/* Login and Step Pages */ 
+.header--home {
+	.call-to-action {
+		h3 {
+				font-size: 2.2rem;
+		}
+	}
+}
+
+	/* Login and Step Pages */
 
 	#login {
 		width: 250px;
@@ -107,5 +114,5 @@
 	}
 
 
-	
+
 }

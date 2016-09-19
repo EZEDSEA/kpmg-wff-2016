@@ -74,7 +74,7 @@ html, body {
 .line--A {
 	border-bottom: 2px solid black;
 	height: 2px;
-	width: 200%;
+	width: 100%;
 }
 
 .line--B {
@@ -99,8 +99,10 @@ End of Universal Classes
 @import 'comments';
 @import 'venue';
 @import 'faq';
+@import 'toy';
 @import 'home';
 @import 'login';
+@import 'info';
 @import 'footer';
 @import 'lg';
 @import 'md';
