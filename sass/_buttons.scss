@@ -1,113 +1,114 @@
 
 /* Button Styling */
 
-
-button[type=submit] {
-	margin: 1em auto;
-	height: 60px;
-	line-height: 50px;
-	position: relative;
-	width: 250px;
-	text-align:center;
-	text-decoration: none;
-	font-family: 'Octagonal';
-	text-transform: uppercase;
-	background: transparent;
-	color: #FFF;
-	font-size: 3em;
-	background-color: $Pink;
-	border-top: 4px solid $Pink;
-	border-bottom: 4px solid $Pink;
-	border-left: none;
-	border-right: none;
-
-	&:before, &:after {
-		content:'';
-		position: absolute;
-		top: 9px;
-		height: 34px;
-		width: 34px;
-		border: 4px solid $Pink;
-		background-color: $Pink;
-		-webkit-transform: scale(1.25,1.25) rotate(45deg);
-		-moz-transform: scale(1.25,1.25) rotate(45deg);
-		-ms-transform: scale(1.25,1.25) rotate(45deg);
-		transform: scale(1.25,1.25) rotate(45deg);
-	}
-
-	&:before {
-		left: -17px;
-    border-top: 0px solid transparent;
-    border-right: 0px solid transparent;
-	}
-	&:after {
-		right: -17px;
-    border-bottom: 0px solid transparent;
-    border-left: 0px solid transparent;
-	}
-
-	&:hover, &:focus {
-		background-color: #FFF;
-		color: $Pink;
+.login-steps, .group .signup-01 {
+	button[type=submit] {
+		margin: 1em auto;
+		height: 60px;
+		line-height: 50px;
+		position: relative;
+		width: 250px;
+		text-align:center;
 		text-decoration: none;
-    &:before, &:after {
+		font-family: 'Octagonal';
+		text-transform: uppercase;
+		background: transparent;
+		color: #FFF;
+		font-size: 3em;
+		background-color: $Pink;
+		border-top: 4px solid $Pink;
+		border-bottom: 4px solid $Pink;
+		border-left: none;
+		border-right: none;
+
+		&:before, &:after {
+			content:'';
+			position: absolute;
+			top: 9px;
+			height: 34px;
+			width: 34px;
+			border: 4px solid $Pink;
+			background-color: $Pink;
+			-webkit-transform: scale(1.25,1.25) rotate(45deg);
+			-moz-transform: scale(1.25,1.25) rotate(45deg);
+			-ms-transform: scale(1.25,1.25) rotate(45deg);
+			transform: scale(1.25,1.25) rotate(45deg);
+		}
+
+		&:before {
+			left: -17px;
+	    border-top: 0px solid transparent;
+	    border-right: 0px solid transparent;
+		}
+		&:after {
+			right: -17px;
+	    border-bottom: 0px solid transparent;
+	    border-left: 0px solid transparent;
+		}
+
+		&:hover, &:focus {
 			background-color: #FFF;
 			color: $Pink;
 			text-decoration: none;
+	    &:before, &:after {
+				background-color: #FFF;
+				color: $Pink;
+				text-decoration: none;
+			}
 		}
 	}
-}
 
-.button {
-	margin-left: 40px;
-	display: inline-block;
-	height: 60px;
-	line-height: 50px;
-	transition: all .2s ease-in-out;
-	position: relative;
-	width: 250px;
-	text-align:center;
-	text-decoration: none;
-	font-family: 'Octagonal';
-	text-transform: uppercase;
-	background: transparent;
-	color: #FFF;
-	font-size: 2.3em;
-	border-top: 4px solid $Pink;
-	border-bottom: 4px solid $Pink;
-
-	&:before, &:after {
-		content:'';
-		position: absolute;
-		top: 9px;
-		height: 34px;
-		width: 34px;
-		border: 4px solid $Pink;
-		-webkit-transform: scale(1.25,1.25) rotate(45deg);
-		-moz-transform: scale(1.25,1.25) rotate(45deg);
-		-ms-transform: scale(1.25,1.25) rotate(45deg);
-		transform: scale(1.25,1.25) rotate(45deg);
-	}
-
-	&:before {
-		left: -17px;
-    border-top: 0px solid transparent;
-    border-right: 0px solid transparent;
-	}
-	&:after {
-		right: -17px;
-    border-bottom: 0px solid transparent;
-    border-left: 0px solid transparent;
-	}
-
-	&:hover, &:focus {
-		background-color: $Pink;
-		color: #FFF;
+	.button {
+		margin-left: 40px;
+		display: inline-block;
+		height: 60px;
+		line-height: 50px;
+		transition: all .2s ease-in-out;
+		position: relative;
+		width: 250px;
+		text-align:center;
 		text-decoration: none;
-    &:before, &:after {
+		font-family: 'Octagonal';
+		text-transform: uppercase;
+		background: transparent;
+		color: #FFF;
+		font-size: 2.3em;
+		border-top: 4px solid $Pink;
+		border-bottom: 4px solid $Pink;
+
+		&:before, &:after {
+			content:'';
+			position: absolute;
+			top: 9px;
+			height: 34px;
+			width: 34px;
+			border: 4px solid $Pink;
+			-webkit-transform: scale(1.25,1.25) rotate(45deg);
+			-moz-transform: scale(1.25,1.25) rotate(45deg);
+			-ms-transform: scale(1.25,1.25) rotate(45deg);
+			transform: scale(1.25,1.25) rotate(45deg);
+		}
+
+		&:before {
+			left: -17px;
+	    border-top: 0px solid transparent;
+	    border-right: 0px solid transparent;
+		}
+		&:after {
+			right: -17px;
+	    border-bottom: 0px solid transparent;
+	    border-left: 0px solid transparent;
+		}
+
+		&:hover, &:focus {
 			background-color: $Pink;
 			color: #FFF;
 			text-decoration: none;
+	    &:before, &:after {
+				background-color: $Pink;
+				color: #FFF;
+				text-decoration: none;
+			}
 		}
 	}
 }
@@ -138,4 +139,25 @@ button[type=submit] {
 		font-weight: bold;
 		color: black;
 	}
+}
+
+select:not([multiple]) {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 96% #FFF;
+		padding: 10px 1.2em;
+		font-weight: 800;
+		height: 3em;
+		font-size: 1.4em;
+		margin: 1em auto;
+}
+
+select {
+	border: 1px solid black;
+	padding: 1em 1.2em;
+	margin: 15px 0px;
+	border-radius: 0px;
+	height: 3em;
+	font-size: 1.4em;
+	font-weight: 800;
 }

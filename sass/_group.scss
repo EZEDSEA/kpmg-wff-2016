@@ -1,0 +1,73 @@
+.group {
+  margin: 5em auto;
+
+  .entry-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .disclaimer {
+      width: 100%;
+      margin: 2em auto 4em;
+      text-align: center;
+    }
+
+    #addtogroupparent {
+      width: 70%;
+
+      input {
+        background-color: #ebf0f3;
+        margin: 1em auto;
+        height: 60px;
+        width: 100%;
+        font-size: 21px;
+      }
+    }
+
+    #kpmg-reserve-a-group-form {
+        border-top: 2px dotted #d3d3d3;
+        width: 100%;
+        margin: 3em 4em 0;
+        text-align: center;
+        .show {
+
+          p.remaining-people {
+            color: $Purple;
+            font-size: 2rem;
+            margin: 1em;
+            font-weight: 400;
+          }
+
+          .reserveagroupparent_add_area {
+            border-bottom: 2px solid black;
+          }
+        }
+
+
+    }
+
+    button#kpmg-add-to-group-button {
+      color: #FFF;
+      font-size: 20px;
+      background: $Blue;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 800;
+      height: 60px;
+      padding: 0 1em;
+      border: none;
+      margin: 1em;
+      &[disabled], &[disabled]:hover {
+        background: #CCC;
+      }
+
+      &:hover {
+        background: #3cb0fd;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+
+}

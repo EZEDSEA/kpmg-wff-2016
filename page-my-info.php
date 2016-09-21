@@ -38,7 +38,13 @@
 		      </div>
 		    </div>
 		  </div>
-		<?php get_template_part( 'loop', 'index' );	?>
+			<div class="row disclaimer">
+				<div class="col-sm-12">
+					PLEASE NOTE THAT PHOTO ID WILL BE REQUIRED TO ENTER THE EVENT AND ALL ATTENDEES
+					<br />MUST BE 19 YEARS OR OLDER.  THE NAME ON THE PRINTED TICKET WILL HAVE TO MATCH THE PHOTO ID.
+				</div>
+			</div>
+			<?php get_template_part( 'loop', 'index' );	?>
 		</div>
   </div>
 

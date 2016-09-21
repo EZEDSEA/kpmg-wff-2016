@@ -53,7 +53,6 @@ $(function(){
 
 	$('[name=login_name').attr('placeholder', 'Enter your kpmg email address');
 
-
 	// FAQ Slider
 
 	$('.question').click(function() {
@@ -65,6 +64,17 @@ $(function(){
 		answer.slideToggle();
 	});
 
+	$('#update-diet-form button').prop('disabled', true);
 
+	$('.attend select').change(function() {
+   	$('.attend button').prop("disabled", false);
+	});
 
+	$('.diet select').change(function() {
+		$('.diet button').prop("disabled", false);
+	});
+
+	$('.guest select').change(function() {
+		$('.guest button').prop("disabled", false);
+	});
 });

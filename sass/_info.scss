@@ -1,9 +1,16 @@
 .my-info {
   .info-box {
-    margin: 6em 0 4em;
+    margin: 6em 0 2em;
     border: 3px solid;
     padding: 40px;
     position: relative;
+
+    .calendar {
+      text-align: center;
+      img {
+        height: 18em;
+      }
+    }
 
     .topleftconcave, .botleftconcave, .toprightconcave, .botrightconcave {
       position: absolute;
@@ -54,9 +61,161 @@
     }
   }
 
-  h4 {
-    font-size: 24px;
+  .disclaimer {
     font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .info-form {
+    margin: 4em auto;
+    .row {
+      margin: 1em auto;
+      border-bottom: 2px dotted #d3d3d3;
+      padding-top: 3em;
+      padding-bottom: 3em;
+      &.attend {
+        form {
+          display: flex;
+          flex-wrap: wrap;
+
+          button {
+            width: 18%;
+            margin: 1em auto;
+          }
+        }
+      }
+
+      &.diet {
+        form {
+          display: flex;
+          flex-wrap: wrap;
+
+          textarea {
+            display: block;
+            width: 100%;
+            margin: auto 6px;
+            border: 1px solid black;
+            height: 10em;
+            font-size: 24px;
+            padding: 1em;
+            order: 3;
+          }
+
+          button {
+            margin: 1em auto;
+            width: 18%;
+            order: 2
+          }
+
+          select:not([multiple]) {
+            order: 1;
+          }
+        }
+      }
+
+      &.guest {
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          select[name="updateguest[has_guest]"] {
+            order: 1;
+          }
+
+          button {
+            margin: 1em auto;
+            width: 18%;
+            order: 2
+          }
+
+          input {
+            background-color: #ebf0f3;
+            margin: 0.5em auto;
+            padding: 14px;
+            width: 49%;
+            font-size: 21px;
+
+            &[name="updateguest[guest_first_name]"] {
+              order: 3;
+            }
+
+            &[name="updateguest[guest_last_name]"] {
+              order: 4;
+            }
+          }
+
+          select[name="updateguest[guest_dietary_requirements]"] {
+            width: 100%;
+            margin: 0.5em 6px;
+            order: 5;
+          }
+
+          textarea {
+            display: block;
+            width: 100%;
+            margin: 0.5em 6px;
+            border: 1px solid black;
+            height: 10em;
+            font-size: 24px;
+            padding: 1em;
+            order: 6;
+          }
+        }
+      }
+    }
+
+    select:not([multiple]) {
+      width: 80%;
+    }
+
+    button {
+      color: #FFF;
+      font-size: 20px;
+      background: $Blue;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 800;
+      border: none;
+
+      &[disabled], &[disabled]:hover {
+        background: #CCC;
+      }
+
+      &:hover {
+        background: #3cb0fd;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  .cancel {
+    padding-bottom: 3em;
+    button {
+      margin: 1em 6px;
+      color: #FFF;
+      font-size: 20px;
+      background: $Blue;
+      padding: 15px 0;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 800;
+      width: 100%;
+
+      &:hover {
+        background: #3cb0fd;
+        text-decoration: none;
+      }
+
+      &[disabled] {
+        background: #CCC;
+      }
+    }
+  }
+
+  h4 {
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   h5 {

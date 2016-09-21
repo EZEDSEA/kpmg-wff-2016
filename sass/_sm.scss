@@ -78,27 +78,50 @@
 
 	/* Login and Step Pages */
 
-	#login {
-		width: 250px;
-	}
+
 
 	form#kpmg-registration-form {
-		width: 250px;
 		select {
 			width: 100%;
 		}
 	}
 
 	main.steps-2 #kpmg-registration-form {
-		width: 80%;
-		input[type=submit] {
+
+		select:not([multiple]), textarea {
 			width: 100%;
-			margin: 45px 0px 0px 0px;
+		}
+
+		.guest-diet-info {
+			select:not([multiple]) {
+				width: 97%;
+			}
+		}
+
+		.guest-info {
+			width: 98%;
+
+			input[type=text] {
+				width: 96%;
+			}
 		}
 	}
-	main.steps #kpmg-registration-form .guest-info input {
-		width: 80%;
+	main.steps #kpmg-registration-form {
+		.guest-info input {
+			width: 80%;
+		}
+
+		&.signup-01 {
+			p {
+				width: 100%;
+			}
+		}
+
+		button[value="BACK"], button[value="NEXT"] {
+			margin:0.7em;
+		}
 	}
+
 
 	main.steps-register #kpmg-registration-form {
 		width: 80%;
@@ -112,7 +135,5 @@
 	.question--container {
 		width: 70%;
 	}
-
-
 
 }
