@@ -65,7 +65,7 @@ main.steps #kpmg-registration-form {
 	&.signup-01 {
 		p {
 			margin: 1em auto;
-			width: 34%;
+			width: 100%;
 		}
 	}
 
@@ -99,7 +99,7 @@ main.steps #kpmg-registration-form {
 	}
 	.yellow {
 		color: $Blue;
-		vertical-align: super;
+		vertical-align: baseline;
 		font-weight: bold;
 		margin-left: 2px;
 		font-size: 1.8em;
@@ -134,7 +134,6 @@ main.steps #kpmg-registration-form {
 
 	button[value="BACK"], button[value="NEXT"] {
 		width: 150px;
-		margin:1em;
 	}
 }
 
@@ -142,6 +141,10 @@ main.steps-2 #kpmg-registration-form {
 	select:not([multiple]) {
 		width: 50%;
 	}
+
+ button[value="BACK"], button[value="NEXT"] {
+	margin: 1em;
+}
 
 	.bring-guest, .guest-info {
 		h3:last-of-type {
@@ -176,13 +179,37 @@ main.steps-2 #kpmg-registration-form {
 main.steps-register {
 	#kpmg-registration-form {
 		width: 600px;
+		display: flex;
+		flex-wrap: wrap;
 	}
 
-	.email_address {
-		width: 80%;
+	#kpmg-registration-ajax-results-area {
+		border: 1px solid;
+    width: 96%;
+    padding: 1em 0;
+    font-size: 18px;
+    display: none;
+    margin-top: -10px;
+    text-align: left;
+
+		div.item {
+			padding: 1em;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $Blue;
+				color: #FFF;
+			}
+		}
 	}
+
 	#kpmg-registration-form input {
 		margin: 10px 0px;
+		width: 47%;
+
+		&.email_address {
+			width: 96%;
+		}
 	}
 	input[type=password] {
 		width: 80%;

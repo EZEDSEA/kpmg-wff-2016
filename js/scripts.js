@@ -66,15 +66,15 @@ $(function(){
 
 	$('#update-diet-form button').prop('disabled', true);
 
-	$('.attend select').change(function() {
+	$('.attend #update-diet-form').change(function() {
    	$('.attend button').prop("disabled", false);
 	});
 
-	$('.diet select').change(function() {
+	$('.diet #update-diet-form').change(function() {
 		$('.diet button').prop("disabled", false);
 	});
 
-	$('.guest select').change(function() {
+	$('.guest #update-diet-form').change(function() {
 		$('.guest button').prop("disabled", false);
 	});
 });

@@ -1,0 +1,51 @@
+body.page-template-page-admin {
+  .internal-menu--container {
+    background-color: $Blue
+  }
+
+  section.entry-content {
+    margin: 3em auto;
+    display: flex;
+
+    ul.nav-tabs {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      border: none;
+      width: 30%;
+      li {
+        margin: 5px 0;
+
+        a {
+          color: #c9c9c9;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 800;
+          transition: all .2s ease-in-out;
+          text-decoration: none;
+          border: none;
+          &.active {
+            color: $Blue;
+          }
+          &:hover {
+            color: #777777;
+          }
+        }
+      }
+    }
+
+    #reports {
+      .boxes {
+        .box {
+          .title {
+            font-size: 16px;
+            font-weight: 800;
+            color: $Blue;
+          }
+        }
+      }
+    }
+  }
+
+
+}

@@ -68,7 +68,7 @@ header.home--header ul {
 			font-weight: lighter;
 			font-size: 4em;
 			transition: all .2s ease-in-out;
-			&:hover {
+			&:hover, &:focus {
 				color: $Pink;
 				text-decoration: none;
 			}

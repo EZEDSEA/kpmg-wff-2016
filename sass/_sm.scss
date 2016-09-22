@@ -116,17 +116,21 @@
 				width: 100%;
 			}
 		}
-
-		button[value="BACK"], button[value="NEXT"] {
-			margin:0.7em;
-		}
 	}
 
 
 	main.steps-register #kpmg-registration-form {
-		width: 80%;
+		width: 90%;
 		input[type=text] {
-			width: 78%;
+			width: 96%;
+
+			&.email_address {
+				width: 96%;
+			}
+		}
+
+		input[type=password] {
+			width: 96%;
 		}
 	}
 
