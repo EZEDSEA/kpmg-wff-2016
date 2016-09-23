@@ -1,10 +1,5 @@
-body.page-template-page-admin {
-  .internal-menu--container {
-    background-color: $Blue
-  }
-
-  section.entry-content {
-    margin: 3em auto;
+.container.admin {
+    margin: 0 auto 2em;
     display: flex;
 
     ul.nav-tabs {
@@ -13,6 +8,7 @@ body.page-template-page-admin {
       flex-direction: column;
       border: none;
       width: 30%;
+      margin-top: 4em;
       li {
         margin: 5px 0;
 
@@ -34,18 +30,437 @@ body.page-template-page-admin {
       }
     }
 
+    select:not([multiple]) {
+        height: auto;
+        font-size: 1em;
+    }
+
+    label.upload, button[name="admincutoffdate[button]"] {
+      border: 1px solid #c9c9c9;
+      padding: 6px 2em;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+      background-color: transparent;
+      height: 35px;
+      &:hover {
+        background-color: $Pink;
+        border-color: $Pink;
+        color: #FFF;
+      }
+    }
+
+    #reports, #registration, #updateregistration, #group, #updategroup {
+      padding: 0 2em;
+      margin: 4em auto;
+      width: 70%;
+      .box {
+          margin-bottom: 2em;
+      }
+
+      .title {
+        font-size: 16px;
+        font-weight: 800;
+        color: $Blue;
+        text-transform: uppercase;
+        margin-bottom: 2em;
+      }
+    }
+
     #reports {
       .boxes {
         .box {
-          .title {
-            font-size: 16px;
-            font-weight: 800;
-            color: $Blue;
+          &.sendReports {
+            label {
+              color: black;
+              font-size: 100%;
+              text-transform: uppercase;
+              vertical-align: bottom;
+              padding: 0;
+            }
+
+            .csv {
+                margin-bottom: 2em;
+
+                input {
+                    height: 30px;
+                    background: #ebf0f3 url('assets/images/mail_small.png') no-repeat scroll 5px 0;
+                    padding-left: 40px;
+                    width: 25em;
+                  }
+
+                  a.button-download, button {
+                      border: 1px solid #c9c9c9;
+                      padding: 6px 2em;
+                      cursor: pointer;
+                      transition: all .2s ease-in-out;
+                      background-color: transparent;
+                      color: black;
+                      font-weight: 800;
+                      text-decoration: none;
+                      &:hover {
+                        background-color: $Pink;
+                        border-color: $Pink;
+                        color: #FFF;
+                      }
+                  }
+
+                  button {
+                      margin-left: 3em;
+                  }
+
+                  a.button-download {
+                      margin-left: 1em;
+
+                      &:after {
+                          font-family: FontAwesome;
+                          content: "\f019";
+                          margin-left: 3px;
+                      }
+                  }
+            }
+          }
+
+          .search {
+            margin: 1em 0;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 2px dotted #d3d3d3;
+            padding-bottom: 3em;
+
+            #kpmg-admin-admincutoffdate-form {
+              display: flex;
+              flex-wrap: wrap;
+
+              .show {
+                display: flex !important;
+                flex-wrap: wrap;
+                width: 80%;
+                label {
+                  width: 40%;
+                  margin: auto 0;
+                }
+
+                input {
+                  width: 50%;
+                  padding: 0.5em;
+                  margin: 0.5em 0;
+                }
+
+                .calendar-picker-icon {
+                  height: 30px;
+                  margin: auto 0 auto 10px;
+                  cursor: pointer;
+                }
+              }
+              .buttonFiller {
+                width: 32%;
+              }
+
+              button[name="admincutoffdate[button]"] {
+                width: 40%;
+                font-weight: 800;
+                margin: 1em 0;
+              }
+            }
+
+            #kpmg-reserve-a-group-form {
+              display: flex;
+              justify-content: space-between;
+
+              #file-selected {
+                padding: 5px 0;
+                color: #C9C9C9;
+                margin: 0 2em;
+              }
+
+              button[name="adminuploademployees[button]"] {
+                color: #FFF;
+                font-size: 20px;
+                background: $Blue;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 800;
+                font-size: 16px;
+                padding: 6px 2em;
+                border: none;
+                transition: all .2s ease-in-out;
+                margin-left: auto;
+                &[disabled], &[disabled]:hover {
+                  background: #CCC;
+                }
+
+                &:hover {
+                  background: $Pink;
+                  text-decoration: none;
+                }
+              }
+
+              input#uploadEmployees {
+                display: none;
+              }
+            }
+
           }
         }
       }
     }
-  }
 
+    #registration {
+        button {
+            width: 400px;
+            text-align: center;
+        }
 
+        .box {
+            #kpmg-adminregister-form {
+                display: flex;
+                flex-wrap: wrap;
+
+                .register-info {
+                    order: 1;
+                    display: flex !important;
+                    flex-wrap: wrap;
+                    font-size: 12px;
+                    p {
+                        width: 100%;
+                        &.requireInd {
+                            text-transform: uppercase;
+                            margin-bottom: 1em;
+                        }
+
+                        &.passwordMin {
+                            font-weight: 800;
+                        }
+                    }
+                    .requireInd {
+                        order: 1;
+                    }
+
+                    .passwordContainer {
+                        order: 5;
+                        width: 100%;
+                        margin: 2em 0;
+                    }
+
+                    .required {
+
+                        &.first_name {
+                            order: 2;
+                            width: 48%;
+                            margin-right:auto;
+                        }
+
+                        &.email {
+                            order: 3;
+                            width: 48%;
+
+                            .results {
+                                border: 1px solid;
+                                width: 340px;
+                                display: none;
+                                margin-top: -15px;
+                                text-align: left;
+                                position: absolute;
+                                background-color: #FFF;
+                        		div.item {
+                        			padding: 1em;
+                        			cursor: pointer;
+
+                        			&:hover {
+                        				background-color: $Blue;
+                        				color: #FFF;
+                        			}
+                        		}
+                            }
+                        }
+
+                        &.last_name {
+                            order: 4;
+                            width: 48%;
+                        }
+
+                        &.pass_one {
+                            width: 48%;
+                            order: 6;
+                            margin-right:auto;
+                        }
+
+                        &.pass_two {
+                            width: 48%;
+                            order: 7;
+                        }
+
+                        input {
+                    		background-color: #ebf0f3;
+                    		margin-bottom: 15px;
+                    		padding: 10px;
+                            width: 95%;
+                    	}
+
+                        &:after {
+                            content: "*";
+                            color: $Blue;
+                            font-size: 24px;
+                            font-weight: 800;
+                        }
+                    }
+
+                }
+
+                .attend-info, .diet-info, .bring-guest,  .guest-info, .guest-diet-info,  {
+                    .title {
+                        color: black;
+                        margin: 1em auto;
+                    }
+
+                    .required {
+                        &:after {
+                            content: "*";
+                            color: $Blue;
+                            font-size: 24px;
+                            font-weight: 800;
+                        }
+                    }
+
+                    select:not([multiple]) {
+                        width: 95%;
+                    }
+
+                    textarea {
+                        width: 340px;
+                        height: 10em;
+                        position: relative;
+                        padding: 1em;
+                        font-size: 16px;
+                    }
+
+                    input {
+                        background-color: #ebf0f3;
+                        margin-bottom: 15px;
+                        padding: 10px;
+                        width: 95%;
+                    }
+                }
+
+                .leftContainer {
+                    order: 2;
+                    width: 48%;
+                    margin-right: auto;
+                    .attend-info {
+                        margin-right: auto;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        width: 100%;
+                        margin-top: 1em;
+                        margin-bottom: 9em;
+                    }
+                }
+
+                .rightContainer {
+                    width: 48%;
+                    order: 3;
+                }
+
+                button[name="adminregister[button]"] {
+                    order: 4;
+                }
+            }
+        }
+    }
+
+    #updateregistration, #group, #updategroup {
+        input {
+            background-color: #ebf0f3;
+            margin-bottom: 15px;
+            padding: 10px;
+
+            &.email_address {
+                width: 31em;
+            }
+
+            &[name="adminregisterup[employee_first_name]"], &[name="adminregisterup[employee_last_name]"], &[name="adminregisterup[guest_first_name]"], &[name="adminregisterup[guest_last_name]"] {
+                width: 15em;
+            }
+        }
+
+        select:not([multiple]) {
+            width: 31em;
+        }
+
+        textarea {
+            display: block;
+            width: 27em;
+            height: 10em;
+            padding: 1em;
+            font-size: 16px;
+        }
+
+        p.disclaimer {
+            text-align: center;
+            font-size: 16px;
+            margin: 2em 0;
+            width: 60%;
+        }
+
+        button {
+            color: #FFF;
+            font-size: 20px;
+            background: $Blue;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 16px;
+            padding: 10px 2em;
+            border: none;
+            transition: all .2s ease-in-out;
+            margin-left: 1em;
+            &[disabled], &[disabled]:hover {
+              background: #CCC;
+            }
+
+            &:hover {
+              background: $Pink;
+              text-decoration: none;
+            }
+
+            &[value="Get Info"] {
+                margin-left: 1em;
+            }
+
+            &[value="SUBMIT REGISTRATION"] {
+                margin: 2em auto;
+            }
+        }
+
+        form .title {
+            color: black;
+            margin: 1em 0;
+        }
+
+        .results {
+            border: 1px solid;
+            width: 31em;
+            display: none;
+            margin-top: -13px;
+            padding: 1em 0;
+            text-align: left;
+            position: absolute;
+            background-color: #FFF;
+            div.item {
+                padding: 1em;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $Blue;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
+
+#calBorder {
+  width: 290px;
 }

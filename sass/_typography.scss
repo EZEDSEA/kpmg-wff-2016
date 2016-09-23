@@ -231,6 +231,13 @@ img {
 Custom classes for unversial use
 ====================================
 */
+.yellow {
+	color: $Blue;
+	vertical-align: baseline;
+	font-weight: bold;
+	margin-left: 2px;
+	font-size: 1.8em;
+}
 
 .purple {
 	color: $Purple;
@@ -239,4 +246,9 @@ Custom classes for unversial use
 .boldItalic {
 	font-weight: bold;
 	font-style: italic;
+}
+
+.boldUnderline {
+	font-weight: 800;
+	text-decoration: underline;
 }

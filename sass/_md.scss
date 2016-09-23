@@ -51,10 +51,9 @@
 		width: 75%;
 	}
 
-
 	.internal-menu--container {
 		height: 30px;
-		ul#menu-internal-menu {
+		ul#menu-internal-menu, ul#menu-admin, ul#menu-logged-in {
 			display: none;
 		}
 	}
@@ -63,7 +62,7 @@
 		display: inline-block;
 	}
 
-	ul#menu-internal-menu-1 {
+	ul#menu-internal-menu-1, ul#menu-admin-1, ul#menu-logged-in-1 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -81,15 +80,17 @@
 			font-weight: lighter;
 			font-size: 25px;
 			transition: all .2s ease-in-out;
+			text-decoration: none;
 			&:hover {
 				color: $Pink;
-				text-decoration: none;
 			}
 		}
 	}
 }
 
-
+.step-title h1 {
+	font-size: 4em;
+}
 
 
 

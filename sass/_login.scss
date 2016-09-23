@@ -97,13 +97,7 @@ main.steps #kpmg-registration-form {
 			margin: 20px 0px 0px 0px;
 		}
 	}
-	.yellow {
-		color: $Blue;
-		vertical-align: baseline;
-		font-weight: bold;
-		margin-left: 2px;
-		font-size: 1.8em;
-	}
+
 	textarea {
 		width: 50%;
 		border: 1px solid black;
@@ -185,12 +179,14 @@ main.steps-register {
 
 	#kpmg-registration-ajax-results-area {
 		border: 1px solid;
-    width: 96%;
+    width: 32em;
+		position: absolute;
     padding: 1em 0;
     font-size: 18px;
     display: none;
-    margin-top: -10px;
+    margin-top: 11em;
     text-align: left;
+		background-color: #FFF;
 
 		div.item {
 			padding: 1em;

@@ -32,6 +32,21 @@
 	}
 }
 
+.ask-login, .ask-logout {
+	margin: 2em;
+	color: #FFF;
+
+	a {
+		color: #FFF;
+		text-decoration: underline;
+
+		&:hover {
+			color: $Pink;
+			text-decoration: underline !important;
+		}
+	}
+}
+
 .home--intro {
 	background: $Purple;
 	position: relative;

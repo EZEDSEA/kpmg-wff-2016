@@ -318,3 +318,16 @@
     font-weight: lighter;
   }
 }
+
+@media all and (max-width: 768px) {
+  .my-info {
+    .info-form select:not([multiple]) {
+      width: 100%;
+    }
+
+    .info-form button {
+      width: 100% !important;
+      height: 3em;
+    }
+  }
+}

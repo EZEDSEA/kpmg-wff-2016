@@ -15,7 +15,15 @@
  				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Home/winter-fast-logo.png" alt="Winter Fast Logo">
  			</div>
  			<a href="<?php echo get_home_url(); ?>/register" class="button">Register Today</a>
- 			<p><?php echo do_shortcode('[kpmgwinterfest_employee_cancel_registration]'); ?></p>
+ 			<?php if (is_user_logged_in()) { ?>
+        <p class="ask-logout">
+          <a href="<?php echo get_home_url(); ?>/wp-login.php?action=logout&redirect_to=https%3A%2F%2F67.225.188.14%2F%7Ekpmgwinterfest%2Fdev&_wpnonce=9bb2caa28c">Log Out</a>
+        </p>
+      <? } else { ?>
+        <p class="ask-login">
+          Already registered? <a href="<?php echo get_home_url(); ?>/login">Sign in here</a>
+        </p>
+      <? } ?>
  			<img class="scrollimg" src="<?php echo get_template_directory_uri(); ?>/assets/images/Home/Scroll_More.png" alt="Scroll for more information" />
  		</div>
  	</section>

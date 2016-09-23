@@ -13,10 +13,12 @@
 
   <?php wp_head(); ?>
 </head>
-
+<?php
+    // Gets current user info
+    $user = wp_get_current_user();
+?>
 <body <?php body_class(); ?>>
     <?php if ( is_front_page() ) { ?>
-
     <header class="header--home">
       <div class="wrapper relative">
         <div class="nav--container">
@@ -71,12 +73,26 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Home/Hamburger.png" alt="Hamburger Icon">
           </div>
         </div>
-        <div class="internal-menu--container">
+        <div class="internal-menu--container <?php echo (in_array( 'winterfest_admin', (array) $user->roles ) ?  'admin' :  'employee') ?>">
           <div class="wrapper">
-            <?php wp_nav_menu( array(
-              'container' => false,
-              'theme_location' => 'internal'
-              )); ?>
+            <?php
+                if ( in_array( 'winterfest_admin', (array) $user->roles ) ) {
+                  wp_nav_menu( array(
+                  'container' => false,
+                  'menu' => 'Admin'
+                 ));
+               } else if( in_array( 'winterfest_employee', (array) $user->roles ) ) {
+                 wp_nav_menu( array(
+                 'container' => false,
+                 'menu' => 'Logged In'
+                ));
+               } else {
+                 wp_nav_menu( array(
+                 'container' => false,
+                 'theme_location' => 'internal'
+                ));
+               }
+            ?>
           </div>
         </div>
 
@@ -88,10 +104,25 @@
                 <h2>MENU</h2>
               </div>
 
-              <?php wp_nav_menu( array(
-              'container' => false,
-              'theme_location' => 'internal'
-             )); ?>
+              <?php
+                  $user = wp_get_current_user();
+                  if ( in_array( 'winterfest_admin', (array) $user->roles ) ) {
+                    wp_nav_menu( array(
+                    'container' => false,
+                    'menu' => 'Admin'
+                   ));
+                 } else if( in_array( 'winterfest_employee', (array) $user->roles ) ) {
+                   wp_nav_menu( array(
+                   'container' => false,
+                   'menu' => 'Logged In'
+                  ));
+                 } else {
+                   wp_nav_menu( array(
+                   'container' => false,
+                   'theme_location' => 'internal'
+                  ));
+                 }
+              ?>
              <a href="<?php echo get_home_url(); ?>/register">
                <div class="button--circle">
                    <h3>Register Today</h3>

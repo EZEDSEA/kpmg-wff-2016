@@ -167,25 +167,27 @@ div.header--steps {
 	padding: 45px 0px;
 }
 
-ul#menu-internal-menu {
+.internal-menu--container {
+	&.admin {
+		background: $Blue;
+	}
+	&.employee {
+		background: $Purple;
+	}
+}
+
+ul#menu-internal-menu, ul#menu-logged-in, ul#menu-admin {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	list-style: none;
 	width: 100%;
 	li {
 		padding: 0;
-		width: 20%;
 		text-align: center;
 		transition: all .2s ease-in-out;
-		&:hover {
-			background: white;
-			a {
-				color: $Purple;
-			}
-		}
 		a {
-			color: white;
+			text-decoration: none;
 			text-transform: uppercase;
 			font-family: 'HelveticaNeueLTStd', sans-serif;
 			font-size: 2rem;
@@ -195,10 +197,46 @@ ul#menu-internal-menu {
 	}
 }
 
-.internal-menu--container {
-	background: $Purple;
+ul#menu-internal-menu, ul#menu-logged-in {
+	li {
+		width: 20%;
+		&:hover {
+			background: white;
+			a {
+				color: $Purple;
+			}
+		}
+		a {
+			color: white;
+		}
+	}
 }
 
+ul#menu-admin {
+	li {
+		width: 16%;
+
+		&.current_page_item {
+			background-color: white;
+			a {
+				color: $Blue;
+			}
+			&:hover {
+				background: white;
+				a {
+					color: $Blue;
+				}
+			}
+		}
+
+		&:hover {
+			background: $Purple;
+		}
+		a {
+			color: white;
+		}
+	}
+}
 
 .hamburger--container--two {
 	z-index: 1000;
