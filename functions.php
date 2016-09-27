@@ -40,7 +40,7 @@ endif;
 add_action( 'after_setup_theme', 'theme_setup' );
 
 if( function_exists('acf_add_options_page') ) {
-	
+
 	acf_add_options_page(array(
 		'page_title' 	=> 'KPMG General Settings',
 		'menu_title'	=> 'KPMG Theme Settings',
@@ -48,19 +48,19 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
-	
+
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'KPMG Header Settings',
 		'menu_title'	=> 'Header',
 		'parent_slug'	=> 'theme-general-settings',
 	));
-	
+
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'KPMG Footer Settings',
 		'menu_title'	=> 'Footer',
 		'parent_slug'	=> 'theme-general-settings',
 	));
-	
+
 }
 
 
@@ -290,4 +290,16 @@ function get_post_parent($post) {
 	else {
 		return $post->ID;
 	}
+}
+
+add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
+function add_login_logout_link($items, $args) {
+	if (is_user_logged_in()) {
+		ob_start();
+		wp_loginout('index.php');
+		$loginoutlink = ob_get_contents();
+		ob_end_clean();
+		$items .= '<li>'. $loginoutlink .'</li>';
+	}
+	return $items;
 }

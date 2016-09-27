@@ -182,7 +182,7 @@
             width: 100%
           }
 
-          a {
+          a:not(.remove_field) {
             margin: 1em 6px;
             color: black;
             font-size: 20px;
@@ -210,16 +210,14 @@
 
         #reserveagroupparent1, #reserveagroupparent2, #reserveagroupparent3, #reserveagroupparent4, #reserveagroupparent5, #reserveagroupparent6, #reserveagroupparent7, #reserveagroupparent8 {
           display: flex;
+          flex-wrap: wrap;
           border-bottom: 2px dotted #d3d3d3;
-          padding: 1em 0;
-          height: 4em;
 
-          .display-name {
-            order: 1;
+          .display-name, .guest-name {
             text-align:left;
             font-weight: 800;
-            width: 35%;
 
+            padding: 1em 0;
             &:before {
               content: "+";
               color: red;
@@ -228,29 +226,27 @@
             }
           }
 
-          .display-email {
-            order: 2;
+          .display-email, .guest-email {
             text-align:left;
-            width: 57%;
+            padding: 1em 0;
           }
 
           .remove_field {
-            visibility: hidden;
-            order: 3;
-            align-self: flex-end;
-
-            &:hover:after {
+            color: #AAA;
+            text-decoration: none;
+            font-size: 2.5em;
+            line-height: 16px;
+            padding: 12px 0;
+            &:hover {
               color: #DDD;
             }
-
-            &:after {
-              content: '\0000D7';
-              visibility: visible;
-              font-size: 2em;
-              font-weight: bold;
-              color: #AAA;
-            }
           }
+
+          .display-name {order: 1; width: 35%;}
+          .display-email {order: 2; width: 60%;}
+          .remove_field {order: 3; width: 5%;}
+          .guest-name {order: 4; width: 35%}
+          .guest-email {order: 5; width: 65%}
         }
       }
     }

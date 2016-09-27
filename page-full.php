@@ -1,21 +1,17 @@
-<?php
+<!--	Template Name: Full Page, No Sidebar -->
 
-/*
-	Template Name: Full Page, No Sidebar
-*/
+<?php get_header(); ?>
 
-get_header();  ?>
+ <div class="wrapper">
+   <div class="step-title">
+     <h2 class="uppercase">Winterfest 2016</h2>
+     <h1><?php the_title(); ?></h2>
+   </div>
+   <div class="line--B"></div>
+   <div class="container <?php the_field('container_class') ?>">
+     <?php get_template_part( 'loop', 'index' );	?>
+   </div>
 
-<div class="main">
-  <div class="wrapper">
-    <?php // Start the loop ?>
-    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-      <h2><?php the_title(); ?></h2>
-      <?php the_content(); ?>
-
-    <?php endwhile; // end the loop?>
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
+ </div>
 
 <?php get_footer(); ?>

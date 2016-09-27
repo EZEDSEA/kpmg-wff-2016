@@ -49,12 +49,11 @@
       }
 
       input {
-        background-color: #ebf0f3;
         margin: 1em auto;
         height: 60px;
         width: 100%;
         font-size: 21px;
-        background: url('assets/images/mail.png') no-repeat scroll 7px 13px;
+        background: #ebf0f3 url('assets/images/mail.png') no-repeat scroll 7px 13px;
         padding-left:50px;
       }
     }
@@ -67,42 +66,40 @@
         .show {
 
           #reserveagroupparent1 {
-            border-bottom: 2px solid black;
             display: flex;
-            padding: 2em 0;
-            margin-bottom: 2em;
-
-            .display-name {
-              text-transform: uppercase;
-              font-size: 21px;
-              font-weight: 800;
-              width: 100%;
-              text-align: left;
-            }
-
-            .display-email {
-              display: none;
-            }
+            flex-wrap: wrap;
+            padding: 2em 0 0;
 
             &:after {
               content: 'HOST\00a0\00a0\25BC';
               font-weight: 800;
               font-size: 18px;
+              width: 50%;
+              text-align: right;
+              order: 2;
+              border-bottom: 2px solid black;
+              padding-bottom: 1em;
             }
-          }
-
-          #reserveagroupparent2, #reserveagroupparent3, #reserveagroupparent4, #reserveagroupparent5, #reserveagroupparent6, #reserveagroupparent7, #reserveagroupparent8, .reserveagroupparent_add_area div {
-            display: flex;
-            border-bottom: 2px dotted #d3d3d3;
-            padding: 1em 0;
-            height: 4em;
 
             .display-name {
+              text-transform: uppercase;
+              font-size: 21px;
+              font-weight: 800;
+              width: 50%;
+              text-align: left;
               order: 1;
+              border-bottom: 2px solid black;
+              padding-bottom: 1em;
+            }
+
+            .guest-name {
+              order: 3;
               text-align:left;
               font-weight: 800;
               width: 35%;
-
+              margin-top: 1em;
+              border-bottom: 2px dotted #d3d3d3;
+              padding: 1em 0;
               &:before {
                 content: "+";
                 color: red;
@@ -111,35 +108,65 @@
               }
             }
 
-            .display-email {
-              order: 2;
+            .guest-email {
+              order: 4;
               text-align:left;
-              width: 57%;
+              width: 65%;
+              margin-top: 1em;
+              border-bottom: 2px dotted #d3d3d3;
+              padding: 1em 0;
+            }
+
+            .display-email {
+              display: none;
+            }
+          }
+
+          #reserveagroupparent2, #reserveagroupparent3, #reserveagroupparent4, #reserveagroupparent5, #reserveagroupparent6, #reserveagroupparent7, #reserveagroupparent8, .reserveagroupparent_add_area div {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 2px dotted #d3d3d3;
+
+            .display-name, .guest-name {
+              text-align:left;
+              font-weight: 800;
+
+              padding: 1em 0;
+              &:before {
+                content: "+";
+                color: red;
+                margin-right: 5px;
+                vertical-align: 10%;
+              }
+            }
+
+            .display-email, .guest-email {
+              text-align:left;
+              padding: 1em 0;
             }
 
             .remove_field {
-              visibility: hidden;
-              order: 3;
-              align-self: flex-end;
-
-              &:hover:after {
+              color: #AAA;
+              text-decoration: none;
+              font-size: 2.5em;
+              line-height: 16px;
+              padding: 12px 0;
+              &:hover {
                 color: #DDD;
               }
-
-              &:after {
-                content: '\0000D7';
-                visibility: visible;
-                font-size: 2em;
-                font-weight: bold;
-                color: #AAA;
-              }
             }
+
+            .display-name {order: 1; width: 35%;}
+            .display-email {order: 2; width: 60%;}
+            .remove_field {order: 3; width: 5%;}
+            .guest-name {order: 4; width: 35%}
+            .guest-email {order: 5; width: 65%}
           }
 
           p.remaining-people {
             color: $Purple;
             font-size: 2rem;
-            margin: 1em;
+            margin: 3em 0 1em;
             font-weight: 400;
           }
         }

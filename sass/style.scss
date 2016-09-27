@@ -131,3 +131,42 @@ img {
 }
 
 /* DESIGN CODING STARTS */
+
+.forgot-pass, .thankyou {
+	.entry-content {
+		margin: 4em;
+		text-align: center;
+	}
+
+	p {
+		font-size: 1.5em;
+	}
+
+	h3 {
+			font-family: HelveticaNeueLTStd;
+			font-weight: 400;
+		  font-size: 1.5em;
+	}
+
+	form {
+		margin: 2em;
+		.entry-content {
+			text-align: center;
+		}
+
+		fieldset {
+			border: none;
+			display: flex;
+			flex-direction: column;
+
+			input {
+				margin: 1em auto;
+        height: 60px;
+				width: 40%;
+        font-size: 21px;
+        background: #ebf0f3 url('assets/images/mail.png') no-repeat scroll 7px 13px;
+        padding-left:50px;
+			}
+		}
+	}
+}
