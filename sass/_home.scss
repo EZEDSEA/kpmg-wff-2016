@@ -101,10 +101,14 @@
 .time--box {
 	position: relative;
 	margin-top: 50px;
-	p {
-		font-family: 'HelveticaNeueLTStd';
-		font-weight: 100;
-		font-size: 30px;
+	font-weight: 400;
+	font-size: 30px;
+	display: flex;
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+	
+	.bold--event {
+		align-self: center;
 	}
 }
 
@@ -124,7 +128,6 @@ span.bold--info {
 	color: $Purple;
 	font-size: 50px;
 	margin-right: 25px;
-	font-family: 'HelveticaNeueLTStd', sans-serif;
 	font-weight: 800;
 }
 

@@ -4,7 +4,7 @@
 @media all and (max-width: 992px) {
 
 	.wrapper {
-		max-width: 90%;
+		max-width: 100%;
 	}
 
 	.small_wrapper {
@@ -13,10 +13,18 @@
 
 	header {
 		margin-top: 0px;
+		&.header--home {
+			margin-top: 0px;
+		}
 	}
 
 	.logo--container {
 		margin-top: 75px;
+		margin-left: 4em;
+	}
+
+	.time--box {
+		font-size: 21px;
 	}
 
 	.call-to-action {
@@ -24,6 +32,7 @@
 		left: 0px;
 		right: 0px;
 		position: absolute;
+		width: 100%;
 	}
 
 	.call-to-action:after {
@@ -56,6 +65,10 @@
 		ul#menu-internal-menu, ul#menu-admin, ul#menu-logged-in {
 			display: none;
 		}
+	}
+
+	.hamburger--container {
+		right: 10%;
 	}
 
 	.hamburger--container--two {

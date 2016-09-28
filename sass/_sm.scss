@@ -13,6 +13,32 @@
 		width: 100%;
 	}
 
+	.winter-logo--container {
+		width: 80%;
+	}
+
+	.hidden-menu {
+		font-size: 6px;
+
+		.hidden--top {
+			.fa-close {
+				font-size: 6em;
+			}
+		}
+	}
+
+	.time--box {
+		font-size: 16px;
+	}
+
+	p.disclaimer {
+		font-size: 16px;
+	}
+
+	.home--main .button {
+		margin-top: 1em;
+	}
+
 	header {
 		margin-top: 0px;
 	}

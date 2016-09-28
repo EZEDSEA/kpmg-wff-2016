@@ -52,16 +52,13 @@
  				</div>
  				<div class="schedule--container--right">
  					<div class="time--box">
- 						<p><span class="bold--info">6PM</span>Registration & Cocktail Reception</p>
- 					</div>
- 					<div class="line--A"></div>
- 					<div class="time--box">
- 						<p><span class="bold--info">7PM</span>Dinner</p>
- 					<div class="line--A"></div>
+ 						<span class="bold--info">6PM</span><span class="bold--event">Registration & Cocktail Reception</span>
  					</div>
  					<div class="time--box">
- 						<p><span class="bold--info">9PM</span>Entertainment</p>
- 					<div class="line--A"></div>
+ 						<span class="bold--info">7PM</span><span class="bold--event">Dinner</span>
+ 					</div>
+ 					<div class="time--box">
+ 						<span class="bold--info">9PM</span><span class="bold--event">Entertainment</span>
  					</div>
  					<p class="disclaimer"><?php the_field('registration_limited'); ?></p>
  				</div>

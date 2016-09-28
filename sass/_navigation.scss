@@ -42,13 +42,19 @@ header.home--header ul {
 	right: 0px;
 	bottom: 0px;
 	overflow-x: scroll;
-	padding: 50px 0px;
 	z-index: 2000;
 	background: white;
+	display: flex;
+	align-items: center;
 }
 
 .hidden-menu-container {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: white;
+	width: 100%;
 
 	ul#menu-menu {
 	display: flex;
@@ -111,7 +117,7 @@ header.home--header ul {
 	z-index: 1000;
 	position: fixed;
 	top: 75px;
-	right: 20%;
+	right: 10%;
 	background: white;
 	padding: 15px 10px;
 	display: inline-block;
@@ -185,7 +191,7 @@ ul#menu-internal-menu, ul#menu-logged-in, ul#menu-admin {
 	li {
 		padding: 0;
 		text-align: center;
-		transition: all .2s ease-in-out;
+		transition: all .5s ease-in-out;
 		a {
 			text-decoration: none;
 			text-transform: uppercase;

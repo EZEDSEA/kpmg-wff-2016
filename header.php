@@ -67,7 +67,7 @@
       <header>
         <div class="header--steps">
           <div class="wrapper">
-            <img class="kpmg--logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/Home/KPMG-Logo.png" alt="KPMG Logo">
+            <a href="<?php echo get_home_url(); ?>/home"><img class="kpmg--logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/Home/KPMG-Logo.png" alt="KPMG Logo"></a>
           </div>
           <div class="hamburger--container--two">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Home/Hamburger.png" alt="Hamburger Icon">
