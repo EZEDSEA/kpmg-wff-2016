@@ -1,18 +1,15 @@
-.group {
+.group, .container.thankyou {
   margin: 5em auto;
 
   .entry-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0;
 
     p {
       text-align: center;
-      margin: 0 15em;
-
-      .small {
-        color: $Blue;
-      }
+      font-size: 1.2em;
     }
 
     .disclaimer {
@@ -24,7 +21,6 @@
     #kpmg-reserve-a-group-ajax-error-area {
       width: 100%;
       text-align: center;
-      color: $Blue;
     }
 
     #addtogroupparent {
@@ -35,8 +31,14 @@
         padding: 1em 0;
         font-size: 18px;
         display: none;
+        position: absolute;
+        width: 798px;
         margin-top: -21px;
-
+        max-height: 20em;
+        overflow: auto;
+        z-index: 1001;
+        text-align: left;
+        background: white;
         div.item {
           padding: 1em;
           cursor: pointer;
@@ -64,32 +66,33 @@
         margin: 3em 4em 0;
         text-align: center;
         .show {
+          .change-host-help {
+            display: none;
+          }
 
           #reserveagroupparent1 {
             display: flex;
             flex-wrap: wrap;
             padding: 2em 0 0;
 
-            &:after {
-              content: 'HOST\00a0\00a0\25BC';
-              font-weight: 800;
-              font-size: 18px;
-              width: 50%;
-              text-align: right;
-              order: 2;
-              border-bottom: 2px solid black;
-              padding-bottom: 1em;
-            }
-
             .display-name {
               text-transform: uppercase;
               font-size: 21px;
               font-weight: 800;
-              width: 50%;
+              width: 100%;
               text-align: left;
               order: 1;
               border-bottom: 2px solid black;
               padding-bottom: 1em;
+
+              &:after {
+                content: 'HOST';
+                font-weight: 800;
+                font-size: 18px;
+                text-align: right;
+                padding-bottom: 1em;
+                float: right;
+              }
             }
 
             .guest-name {

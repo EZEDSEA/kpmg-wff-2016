@@ -104,7 +104,13 @@
 
 	/* Login and Step Pages */
 
-
+	#login {
+		margin: 0 2em;
+		input {
+			margin: 1em;
+			width: 100%;
+		}
+	}
 
 	form#kpmg-registration-form {
 		select {
@@ -120,7 +126,7 @@
 
 		.guest-diet-info {
 			select:not([multiple]) {
-				width: 97%;
+				width: 95%;
 			}
 		}
 
@@ -128,7 +134,7 @@
 			width: 98%;
 
 			input[type=text] {
-				width: 96%;
+				width: 95%;
 			}
 		}
 	}
@@ -144,21 +150,152 @@
 		}
 	}
 
+	main.steps-register, .steps-2 {
+		#kpmg-registration-form {
+		margin: auto 1em;
 
-	main.steps-register #kpmg-registration-form {
-		width: 90%;
-		input[type=text] {
-			width: 96%;
+		input[type=text],  input[type=password], input.email_address{
+			width: 95%;
+		}
 
-			&.email_address {
-				width: 96%;
+		.emailContainer #kpmg-registration-ajax-results-area {
+			width: 88%;
+			margin-left: 1px;
+		}
+	}
+}
+
+	#registration button[type=submit], .forgot-pass button[type=submit], .group .signup-01 button[type=submit], .login-steps button[type=submit] {
+		font-size: 2em;
+	}
+
+	.container.admin {
+		flex-direction: column;
+
+		ul.nav-tabs {
+			flex-direction: row;
+
+			li a {
+				font-size: 12px;
 			}
 		}
 
-		input[type=password] {
-			width: 96%;
+		#reports .boxes .box .search #kpmg-admin-admincutoffdate-form .show {
+			width: 100%;
+		}
+
+		#reports .boxes .box.sendReports .csv button, #reports .boxes .box.sendReports .csv a.button-download {
+			margin: 1em 0;
+		}
+
+		 #registration .box {
+			 #kpmg-adminregister-form {
+				 .leftContainer {
+					 width: 100%;
+				 }
+
+				 .rightContainer {
+					 width: 100%;
+				 }
+
+				 .register-info  {
+					 flex-direction: column;
+
+					 .required.first_name, .required.last_name, .required.email, .required.pass_one, .required.pass_two {
+						 width: 100%;
+					 }
+				 }
+			 }
+		 }
+
+		#reports, #status, #registration, #updateregistration, #group, #updategroup {
+			width: 100%;
+			padding: 0 1em;
+
+			.title {
+				margin: 1em 0;
+			}
+
+			label.upload {
+				height: 50px;
+			}
+
+			p {
+				margin: 1em 0;
+			}
+
+			p.disclaimer {
+				width: 100%;
+			}
+
+			textarea {
+				width: 100%;
+			}
+
+			#addtogroupparent{
+				width: 100%;
+				#kpmg-admingrouprs-input, #kpmg-admingroupup-input {
+					width: 100%;
+				}
+
+				button {
+					margin-left: 0;
+				}
+			}
+
+			input {
+				&.email_address {
+					width: 100%;
+
+					&[name="adminstatusup[employee_email_address]"], &[name="adminregisterup[employee_email_address]"] {
+						width: 94%;
+					}
+				}
+
+				&[name="adminregisterup[employee_first_name]"], &[name="adminregisterup[employee_last_name]"], &[name="adminregisterup[guest_first_name]"], &[name="adminregisterup[guest_last_name]"] {
+					width: 94%;
+				}
+			}
+
+			#kpmg-adminstatusup-get-form {
+				.results {
+					margin-top: -14px;
+				}
+			}
+
+			.results, #kpmg_seat_admingroup_ajax-results-area {
+				width: 85%;
+			}
+
+			button {
+				margin-left: 0;
+				&[name="adminregister[button]"] {
+					width: 80%;
+				}
+
+				&[value="Get Info"] {
+					margin-left: 0;
+				}
+			}
+
+			select:not([multiple]) {
+				width: 100%;
+
+				&[name="adminregisterup[guest_dietary_requirements]"] {
+					width: 94%;
+				}
+			}
 		}
 	}
+
+/* Hidden Menu Button */
+.hidden-menu-container #cancel-registration-form {
+	button[type=submit]  {
+		&[name="cancelregistration[button]"] {
+			font-size: 4em;
+		}
+	}
+}
 
 	/* FAQ PAGE */
 
@@ -172,7 +309,9 @@
 
 	.group .entry-content #addtogroupparent input { font-size: 13px; }
 
-	.group .entry-content #addtogroupparent #kpmg_seat_ajax-results-area { font-size: 12px; margin-top: 12px; }
+	.container.thankyou, .group {
+		.entry-content #addtogroupparent #kpmg_seat_ajax-results-area { font-size: 12px; margin-top: -12px; width: 62%;  }
+	}
 
 	.group .entry-content #kpmg-reserve-a-group-form .show #reserveagroupparent1 .display-name { font-size: 18px; }
 

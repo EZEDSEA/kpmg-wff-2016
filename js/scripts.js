@@ -51,7 +51,7 @@ $(function(){
 
 	// Change Placeholder
 
-	$('[name=login_name').attr('placeholder', 'Enter your kpmg email address');
+	$('[name=login_name]').attr('placeholder', 'Enter your kpmg email address');
 
 	// FAQ Slider
 
@@ -78,5 +78,5 @@ $(function(){
 		$('.guest button').prop("disabled", false);
 	});
 
-	$('#uploadEmployees').bind('change', function() { var fileName = ''; fileName = $(this).val(); $('#file-selected').html(fileName); }) 
+	$('#uploadEmployees').bind('change', function() { var fileName = ''; fileName = $(this).val(); $('#file-selected').html(fileName); })
 });

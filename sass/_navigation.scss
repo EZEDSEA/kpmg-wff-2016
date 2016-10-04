@@ -192,13 +192,13 @@ ul#menu-internal-menu, ul#menu-logged-in, ul#menu-admin {
 		padding: 0;
 		text-align: center;
 		transition: all .5s ease-in-out;
+		padding: 0.5em 0;
 		a {
 			text-decoration: none;
 			text-transform: uppercase;
 			font-family: 'HelveticaNeueLTStd', sans-serif;
 			font-size: 2rem;
 			display: block;
-    	padding: 10px 3px 3px;
 		}
 	}
 }

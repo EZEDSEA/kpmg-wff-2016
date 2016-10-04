@@ -294,7 +294,8 @@ function get_post_parent($post) {
 
 add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
 function add_login_logout_link($items, $args) {
-	if (is_user_logged_in()) {
+	$user = wp_get_current_user();
+	if (in_array('winterfest_employee', (array) $user->roles ) || in_array('winterfest_admin',  (array) $user->roles)) {
 		ob_start();
 		wp_loginout('index.php');
 		$loginoutlink = ob_get_contents();

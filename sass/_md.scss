@@ -1,10 +1,47 @@
 
 /* Responsive at Medium at ≥992px */
+@media all and (max-width: 1200px) {
+	.group, .container.thankyou {
+		.entry-content #addtogroupparent #kpmg_seat_ajax-results-area {
+				width: 658px;
+		}
+	}
+
+	#login {
+		margin: 0 25em;
+	}
+
+	.wrapper {
+		#kpmg-registration-form {
+			margin: auto 10em;
+		}
+
+		.emailContainer {
+			#kpmg-registration-ajax-results-area {
+					width: 73%;
+					margin-left: 8px;
+			}
+		}
+	}
+}
 
 @media all and (max-width: 992px) {
+	#login {
+		margin: 0 15em;
+	}
 
 	.wrapper {
 		max-width: 100%;
+		#kpmg-registration-form {
+			margin: auto 5em;
+		}
+
+		.emailContainer {
+			#kpmg-registration-ajax-results-area {
+					width: 82%;
+					margin-left: 8px;
+			}
+		}
 	}
 
 	.small_wrapper {
@@ -102,10 +139,18 @@
 }
 
 .step-title h1 {
-	font-size: 4em;
+	font-size: 3em;
 }
 
+	.container.thankyou, .group {
+			margin: 1em auto;
+			width: 95%;
 
+			.entry-content #addtogroupparent #kpmg_seat_ajax-results-area {
+				width: 64%;
+			}
 
+			.entry-content p { margin: 0; }
+	}
 
 }

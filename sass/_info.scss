@@ -182,6 +182,10 @@
             width: 100%
           }
 
+          .change-host-help {
+            display: none;
+          }
+
           a:not(.remove_field) {
             margin: 1em 6px;
             color: black;
@@ -208,22 +212,32 @@
           }
         }
 
+        .host-area {
+          .display-name, .display-email {
+            font-size: 18px;
+          }
+        }
+
         #reserveagroupparent1, #reserveagroupparent2, #reserveagroupparent3, #reserveagroupparent4, #reserveagroupparent5, #reserveagroupparent6, #reserveagroupparent7, #reserveagroupparent8 {
           display: flex;
           flex-wrap: wrap;
           border-bottom: 2px dotted #d3d3d3;
 
+          &:not(.is_host) {
+            .display-name, .guest-name {
+              &:before {
+                content: "+";
+                color: red;
+                margin-right: 5px;
+                vertical-align: 10%;
+              }
+            }
+          }
+
           .display-name, .guest-name {
             text-align:left;
             font-weight: 800;
-
             padding: 1em 0;
-            &:before {
-              content: "+";
-              color: red;
-              margin-right: 5px;
-              vertical-align: 10%;
-            }
           }
 
           .display-email, .guest-email {

@@ -1,8 +1,11 @@
 
 /* Button Styling */
+.login-steps, .group .signup-01, #registration, .forgot-pass, .thankyou, .hidden-menu-container #cancel-registration-form {
+	button[type=submit]  {
+		&[name="cancelregistration[button]"] {
+			font-size: 1.6em;
+		}
 
-.login-steps, .group .signup-01, #registration, .forgot-pass {
-	button[type=submit] {
 		margin: 1em auto;
 		height: 60px;
 		line-height: 50px;
@@ -60,7 +63,6 @@
 }
 
 .home--main .button {
-	margin-left: 40px;
 	display: inline-block;
 	height: 60px;
 	line-height: 50px;
@@ -148,6 +150,10 @@ select:not([multiple]) {
 		height: 3em;
 		font-size: 1.4em;
 		margin: 1em auto;
+
+		&::-ms-expand {
+    	display: none;
+		}
 }
 
 select {
@@ -158,4 +164,17 @@ select {
 	height: 3em;
 	font-size: 1.4em;
 	font-weight: 800;
+}
+
+input {
+	background-color: #ebf0f3;
+	margin-bottom: 15px;
+	padding: 10px;
+	}
+
+input[required]:after {
+		content: "*";
+		color: $Blue;
+		font-size: 24px;
+		font-weight: 800;
 }

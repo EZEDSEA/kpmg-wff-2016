@@ -30,8 +30,8 @@ section.login-steps {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	margin: 0 auto;
-	width: 400px;
+	margin: 0 30em;
+
 	input {
 		background-color: #ebf0f3;
 		margin-bottom: 15px;
@@ -40,14 +40,14 @@ section.login-steps {
 }
 
 .account-sign-up {
-	margin-top: 15px;
+  margin: 2em 0;
 	font-size: 2rem;
 	color: black;
 	font-family: 'HelveticaNeueLTStd', sans-serif;
 	font-weight: bold;
 }
 
-main.steps #kpmg-registration-form {
+.wrapper #kpmg-registration-form {
 	margin: 0 auto;
 	display: block;
 	text-align: center;
@@ -66,6 +66,10 @@ main.steps #kpmg-registration-form {
 		p {
 			margin: 1em auto;
 			width: 100%;
+		}
+
+		button[value="NEXT"] {
+			margin: 1em auto;
 		}
 	}
 
@@ -88,22 +92,20 @@ main.steps #kpmg-registration-form {
 		margin: 0px 10px;
 		font-size: 21px;
 	}
-	.bring-guest, .guest-info {
-		margin: 15px 0px;
-	}
+
 	.guest-info {
 		input {
-			width: 40%;
 			margin: 20px 0px 0px 0px;
 		}
 	}
 
 	textarea {
-		width: 50%;
+		width: 100%;
 		border: 1px solid black;
 		height: 10em;
 		font-size: 24px;
 		padding: 1em;
+		margin: 1em auto;
 	}
 
 	button[value="BACK"] {
@@ -131,62 +133,148 @@ main.steps #kpmg-registration-form {
 	}
 }
 
-main.steps-2 #kpmg-registration-form {
-	select:not([multiple]) {
-		width: 50%;
-	}
-
- button[value="BACK"], button[value="NEXT"] {
-	margin: 1em;
-}
-
-	.bring-guest, .guest-info {
-		h3:last-of-type {
-			display: block;
-			font-family: 'HelveticaNeueLTStd', sans-serif;
-			font-weight: bold;
-			font-size: 2rem;
-		}
-	}
-
-	.guest-info {
-		width: 50%;
-		margin: 1em auto;
-
-		input[type=text] {
-			width: 47%;
-		}
-	}
-}
-
 .attend-info {
+	width: 100%;
 	p:first-of-type {
 		display: none;
 	}
 	select:not([multiple]) {
-		width: 50%;
+		width: 500px;
+		margin: 1em auto;
 	}
 }
 
+.reg-thankyou {
+		text-align: center;
+
+		p {
+			font-size: 1.5em;
+			margin: 1em;
+		}
+
+		a {
+				display: inline-block;
+				margin: 1em;
+				height: 50px;
+				line-height: 40px;
+				position: relative;
+				width: 250px;
+				text-align:center;
+				text-decoration: none;
+				font-family: 'Octagonal';
+				text-transform: uppercase;
+				background: transparent;
+				color: #FFF;
+				font-size: 2em;
+				background-color: $Pink;
+				border-top: 4px solid $Pink;
+				border-bottom: 4px solid $Pink;
+				border-left: none;
+				border-right: none;
+				transition: all .2s ease-in-out;
+				&:before, &:after {
+					content:'';
+					position: absolute;
+					top: 7px;
+					height: 28px;
+					width: 28px;
+					border: 4px solid $Pink;
+					background-color: $Pink;
+					-webkit-transform: scale(1.25,1.25) rotate(45deg);
+					-moz-transform: scale(1.25,1.25) rotate(45deg);
+					-ms-transform: scale(1.25,1.25) rotate(45deg);
+					transform: scale(1.25,1.25) rotate(45deg);
+				}
+
+				&:before {
+					left: -14px;
+			    border-top: 0px solid transparent;
+			    border-right: 0px solid transparent;
+				}
+				&:after {
+					right: -14px;
+			    border-bottom: 0px solid transparent;
+			    border-left: 0px solid transparent;
+				}
+
+				&:hover, &:focus {
+					background-color: #FFF;
+					color: $Pink;
+					text-decoration: none;
+			    &:before, &:after {
+						background-color: #FFF;
+						color: $Pink;
+						text-decoration: none;
+					}
+				}
+		}
+}
 
 
-main.steps-register {
+.wrapper {
 	#kpmg-registration-form {
-		width: 600px;
 		display: flex;
 		flex-wrap: wrap;
+		flex-direction: column;
+		margin: auto 15em;
+
+		.diet-info {
+			width: 100%;
+		}
+
+		select:not([multiple]) {
+			width: 100%;
+
+			&[name="register[dietary_requirements_guest]"] {
+				width: 97%;
+			}
+		}
+
+		.buttons {
+			button[value="BACK"], button[value="NEXT"] {
+			 margin: 1em;
+		 	}
+		}
+		
+		.bring-guest, .guest-info {
+			h3:last-of-type {
+				display: block;
+				font-family: 'HelveticaNeueLTStd', sans-serif;
+				font-weight: bold;
+				font-size: 2rem;
+			}
+		}
+
+		.guest-info {
+			margin: 1em auto;
+			width: 100%;
+			input[type=text] {
+				width: 47%;
+			}
+		}
+
+		.passNoteContainer {
+			margin: 1em auto;
+		}
 	}
+
+.emailContainer {
+	width: 100%;
 
 	#kpmg-registration-ajax-results-area {
 		border: 1px solid;
-    width: 32em;
+    width: 731px;
 		position: absolute;
     padding: 1em 0;
     font-size: 18px;
     display: none;
-    margin-top: 11em;
+    margin-top: -8px;
+		margin-left: 7px;
     text-align: left;
 		background-color: #FFF;
+		max-height: 20em;
+		overflow: auto;
+		z-index: 1001;
 
 		div.item {
 			padding: 1em;
@@ -198,6 +286,7 @@ main.steps-register {
 			}
 		}
 	}
+}
 
 	#kpmg-registration-form input {
 		margin: 10px 0px;
@@ -208,10 +297,7 @@ main.steps-register {
 		}
 	}
 	input[type=password] {
-		width: 80%;
-	}
-	p:last-of-type {
-		font-size: 1.5rem;
+		width: 100%;
 	}
 
 	#kpmg-registration-ajax-error-area {

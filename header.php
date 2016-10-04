@@ -128,7 +128,7 @@
                    <h3>Register Today</h3>
                </div>
              </a>
-             <p><?php echo do_shortcode('[kpmgwinterfest_employee_cancel_registration]'); ?></p>
+             <p><?php echo do_shortcode('[kpmgwinterfest_employee_cancel_registration_menuitem]'); ?></p>
             </div>
         </div>
       </header>

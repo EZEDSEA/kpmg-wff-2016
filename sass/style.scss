@@ -28,7 +28,7 @@ html, body {
 
 #wrapper {
 	display: flex;
-	min-height: 100vh;
+	height: 100vh;
 	flex-direction: column;
 }
 
@@ -38,7 +38,11 @@ html, body {
 }
 
 .content-wrapper {
-	flex: 1;
+	flex: 1 0 auto;
+}
+
+header, footer {
+	flex-shrink: 0;
 }
 
 .small_wrapper {
